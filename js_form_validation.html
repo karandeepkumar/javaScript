@@ -1,0 +1,96 @@
+<html>
+
+<head>
+<title>JavaScript Form validation</title>
+</head>
+
+<body>
+
+<form onsubmit="return validating()">
+
+	<label>Name:</label>
+		<input type="text" name="" value="" id="name"><span id="nameerr"></span><br><br>
+	<label>Mobile:</label>	
+		<input type="number" name="" value="" id="mobile"><span id="mobileerr"></span> <br><br>
+	<label>Pass:</label>	
+		<input type="text" name="" value="" id="pass"><span id="passerr"></span> <br><br>
+	<label>Email:</label>	
+		<input type="text" name="" value="" id="email"><span id="emailerr"></span> <br><br>
+	<input type="submit" name="" value="Submit">
+
+</form>
+
+<script type="text/javascript">
+
+
+			function validating(){
+				var myName= document.getElementById("name").value;
+				var myMobile= document.getElementById("mobile").value;
+				var myPass= document.getElementById("pass").value;
+				var myEmail= document.getElementById("email").value;
+
+				var namePattern= /^\w{4,}$/gmi;
+				var mobilePattern= /^\d{10}$/gmi;				 
+				var passPattern= /^\S{6,20}$/gmi;
+				 // var emailPattern= 
+
+				if(namePattern.test(myName)){
+				
+				 	myName= document.getElementById("nameerr").innerHTML="OK";
+					}
+					else{
+						document.getElementById("nameerr").innerHTML="**Name min 4 Char";
+						return false;
+					}
+
+				if(mobilePattern.test(myMobile)){
+				 	myMobile= document.getElementById("mobileerr").innerHTML="OK";
+					}
+					else{
+						document.getElementById("mobileerr").innerHTML="It should min-max 10 char";
+						return false;
+					}
+
+				if(passPattern.test(myPass)){
+				 	myPass= document.getElementById("passerr").innerHTML="OK";
+					}
+					else{
+						document.getElementById("passerr").innerHTML="It should b/w 6 to 20 char";
+						return false;
+					}
+
+
+			}		
+
+</script>
+
+
+
+<script type="text/javascript">
+	
+	function promptbtn(){
+		prompt("What is your name?");
+
+	}
+
+	function confirmbtn(){
+
+	confirm("Do you want to redirect to another page?");
+}
+
+
+</script>
+
+
+<button onclick="promptbtn()">Prompt Button</button>
+<button onclick="confirmbtn()">Confirm Button</button>
+<button onclick="window.print()">Click to Print</button>
+<button onclick="window.open('http://www.google.com')">Redirect </button><br> <br>
+
+
+
+
+</body
+</html>
+
+
