@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>	
+<head>
+ <style type="text/css">
+	*{ box-sizing: border-box;padding: 0;margin: 0; }
+	body{ font-family: verdana; }
+	#legend{font-weight: bold; } 
+	
+</style>
+	<title>Registration Form</title>
+</head>
+<body>
+		<form action="#" onsubmit="return validation()">
+			<fieldset>
+				<legend id="legend">Registration Form</legend>
+					<label>Name:</label> 
+					<input type="text" name="name" id="myname" required="">
+					<span id="nameerror"></span> <br> <br>
+
+					<label>Email:</label>
+					<input type="text" name="email" id="myemail">
+					<span id="emailerror"></span> <br> <br>
+
+					<label>Password:</label>
+					<input type="password" name="pass" id="mypass">
+					<span id="passerror"></span> <br> <br>
+
+					<label>Mobile:</label>
+					<input type="text" name="mobile" id="mymob">
+					<span id="numbererror"></span> <br><br>
+
+
+
+					<label>Gender:</label>
+					<input type="radio" name="gender" value="male" checked> Male
+					<input type="radio" name="gender" value="female">Female
+					<input type="radio" name="gender" value="other">Other <br> <br>
+
+					<label>Vehicle You Have:</label>
+					<input type="checkbox" name="two wheeler" value="Bike" checked>Bike
+					<input type="checkbox" name="four wheeler" value="Car">Car
+					<input type="checkbox" name="cycle" value="Cycle">Cycle <br> <br>
+
+					<label>Choose Your Favourite Color: </label>
+					<input type="color" name="favcolor" value="black"> <br> <br>
+
+					<label>DOB:</label>
+					<input type="date" name="bday"><br> <br>
+
+					<label>Month:</label>
+					<input type="month" name="bday"><br> <br>
+
+					<label>Telephone:</label>
+					<input type="tel" name="telephone"><br> <br>
+
+					<label>Select University</label>
+					<select>
+						<option>Punjabi University</option>
+						<option>Punjab Uni</option>
+						<option>PTU</option>
+						<option>LPU</option>
+					</select>  <br> <br>
+					<label>Select Image</label>
+					<input type="file" name="pic"><br> <br>
+
+					<label>Message:</label>	<br>
+					<textarea rows="3" cols="20">Type Your Message</textarea> <br> <br>
+
+
+
+					<input type="Submit" name="Submit" value="Submit">
+					<input type="reset" name="">
+			</fieldset>
+		</form>
+	<script src="jscript.js"></script>
+
+</body>
+</html>
