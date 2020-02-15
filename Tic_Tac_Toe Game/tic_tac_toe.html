@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe using Javascript</title>
+	<style type="text/css">
+		td{
+			border: 1px solid black;
+			border-radius: 10px;
+			width: 100px;
+			height: 100px;
+			background-color: white;
+		}
+		body{
+			background-color: #bcb;
+			text-align: center;
+		}
+		h1,h3{
+			font-family: verdana;
+		}
+		table{
+			text-align: center;
+			align-items: center;
+		}
+		
+
+	</style>
+</head>
+<body>
+
+	<h1>Tic Tac Toe</h1>
+	<h3 id="player">Lets Play</h3>
+	<table align="center"> 
+		<tr>
+			<td id="row1" onclick="box('1')"></td>
+			<td id="row2" onclick="box('2')"></td>
+			<td id="row3" onclick="box('3')"></td>
+		</tr>
+		<tr>
+			<td id="row4" onclick="box('4')"></td>
+			<td id="row5" onclick="box('5')"></td>
+			<td id="row6" onclick="box('6')"></td>
+		</tr>
+		<tr>
+			<td id="row7" onclick="box('7')"></td>
+			<td id="row8" onclick="box('8')"></td>
+			<td id="row9" onclick="box('9')"></td>
+		</tr>
+	</table>
+
+<script src="tic_tac_toe.js"></script>
+</body>
+</html>
