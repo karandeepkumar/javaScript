@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>JavaScript Form validation</title>
+	<style type="text/css">
+
+		body{
+			background-color: #bbb;
+			font-family: verdana;
+		}
+		div{
+			margin: auto;
+			width: 250px;
+			height: 350px;
+		}
+
+		h2{
+			text-align:center;
+			font-size: 35px;
+		}
+		label{
+			font-size: 25px;
+		}
+		input{
+			width: 250px;
+			height: 35px;
+			border-radius: 6px;
+		}
+		input[type="submit"],[type="reset"]{
+			font-size: 25px;
+			border-radius: 4px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<h2> Registration Form </h2> <br>
+		<div>
+			<form onsubmit="return validating()">
+				<label>Full Name:</label> <br>
+					<input type="text" name="" value="" id="name"><span id="nameerr"></span><br><br>
+				<label>Mobile No:</label> <br>
+					<input type="number" name="" value="" id="mobile"><span id="mobileerr"></span> <br><br>
+				<label>Password:</label> <br>	
+					<input type="password" name="" value="" id="pass"><span id="passerr"></span> <br><br>
+				<label>Email Id:</label> <br>	
+					<input type="email" name="" value="" id="email"><span id="emailerr"></span> <br><br>
+				<input type="submit" name="" value="Submit"><br> <br>
+				<input type="reset" name="" value="Reset">
+			</form>
+		</div>
+
+<script src="form_validation.js"></script>
+
+</body>
+</html>
+
+
